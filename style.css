@@ -1,0 +1,270 @@
+:root {
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #000000;
+    --bg-secondary: rgb(71, 75, 71);
+    --transition-speed: 600ms;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #1DB954;
+  }
+  
+  main {
+    margin-left: 5rem;
+    padding: 1rem;
+  }
+  
+  .navbar {
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 600ms ease;
+    overflow: hidden;
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .nav-item {
+    width: 100%;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+  }
+
+  .nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  
+  .nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+  
+  .link-text {
+    display: none;
+    margin-left: 1rem;
+  }
+
+ 
+
+
+
+ 
+ /*Animation*/
+ .home{
+    display: flex;
+    justify-content: center;
+ }
+
+.myname {
+    background-color: #000000;
+    height: fit-content;
+    width: fit-content;
+    padding: 8px;
+    box-shadow: 10px 10px 5px lightblue
+    
+} 
+/*Sobre mim*/
+
+.title1{
+    display: flex;
+    justify-content: center;
+    padding: 15px ;
+    border-style: inset;
+    background-color: #1DB954;
+    box-shadow: 5px 5px 2px inset;
+}
+
+.about-me{
+    padding: 50px;
+    
+}
+.aboutmetext{
+    display: flex;
+    justify-content:last baseline;
+    align-items:center;
+    gap: 50px;
+}
+
+.text1 {
+    text-align: justify;
+    font-size: 22px;
+    line-height: 1.5;
+    
+}
+
+.pic {
+    display: flex;
+    justify-content: end;
+    
+    
+}
+
+/*Skill*/
+
+.Skills {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: auto;
+    padding: 5px;
+}
+
+.Skills::-webkit-scrollbar {
+    width: 0.20rem;
+  }
+  
+  .Skills::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  .Skills::-webkit-scrollbar-thumb {
+    background: #69776e;
+  }
+
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper{
+    height: 265px;
+    width: 210px;
+    background-color: #1DB954;
+    padding: 5px;
+    padding-top: 6px;
+    box-shadow: 8px 8px 2px;
+    
+    
+
+
+}
+/*projetos*/
+.wrapper-proj{
+    height: 265px;
+    width: 300px;
+    background-color: #1DB954;
+    padding: 5px;
+    padding-top: 6px;
+    box-shadow: 10px 10px 2px;
+}
+
+.Projetos {
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    overflow: auto;
+    padding: 80px;
+    gap: 25px;
+}
+
+
+.woofoD{
+    text-align: justify;
+    font-size: 12px;
+}
+
+
+.btn{
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    background: #000000;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px;
+
+}
+
+.name-text{
+    font-size: 2rem;
+    color: #1DB954;
+    letter-spacing: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-right: 5px solid;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: 
+       typing 2s steps(26),
+       cursor .4s step-end infinite alternate ;    
+}  
+ 
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
